@@ -37,7 +37,7 @@ export function ContactSection() {
       toast({
         variant: "destructive",
         title: "Error",
-        description: "Por favor, introduce un email válido.",
+        description: "Please enter a valid email address.",
       })
       return
     }
@@ -52,28 +52,28 @@ export function ContactSection() {
 
       if (response.ok) {
         toast({
-          title: "Mensaje enviado",
-          description: "Tu mensaje ha sido enviado correctamente. Nos pondremos en contacto contigo pronto.",
+          title: "Message sent",
+          description: "Your message has been sent successfully. We will contact you soon.",
         })
         setFormData({ name: "", email: "", subject: "", message: "" })
       } else {
         toast({
           variant: "destructive",
           title: "Error",
-          description: "Ha ocurrido un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.",
+          description: "An error occurred while sending the message. Please try again later.",
         })
       }
     } catch (error) {
       toast({
         variant: "destructive",
         title: "Error",
-        description: "Ha ocurrido un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.",
+        description: "An error occurred while sending the message. Please try again later.",
       })
     }
   }
 
   return (
-    <section className="bg-gray-50 py-16">
+    <section id="contact-form" className="bg-gray-50 py-16">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-2">
           <div>
@@ -85,15 +85,15 @@ export function ContactSection() {
             <div className="space-y-4">
               <div className="flex items-center space-x-3">
                 <Mail className="h-6 w-6 text-primary" />
-                <span>contact@optiml.com</span>
+                <span>info@optiml-solutions.com</span>
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="h-6 w-6 text-primary" />
-                <span>+1 (555) 123-4567</span>
+                <a href="tel:+4917680592510">+49 17680592510</a>
               </div>
               <div className="flex items-center space-x-3">
                 <MapPin className="h-6 w-6 text-primary" />
-                <span>123 AI Street, Tech City, TC 12345</span>
+                <span>Kirchheim Str. Germany</span>
               </div>
             </div>
           </div>

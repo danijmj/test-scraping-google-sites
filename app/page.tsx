@@ -21,27 +21,27 @@ export default function Home() {
         <div className="absolute inset-0 bg-black bg-opacity-50 z-10"></div>
         <div className="relative z-20 mx-auto max-w-7xl px-4 py-20 sm:px-6 lg:px-8 flex items-center h-full">
           <div className="max-w-3xl text-white">
-            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl">
-              The path to AI begins with <span className="text-primary-foreground">data confidence</span>
+            <h1 className="text-4xl font-bold tracking-tight sm:text-6xl lh-5">
+            Uncover Competitor Pricing, Understand Your Guests,&nbsp;
+            <span className="bg-primary text-white">&nbsp;Powered by AI&nbsp;</span>
             </h1>
-            <p className="mt-6 text-xl">Get clean, accessible, and governed AI-ready data in weeks, not months.</p>
+            <p className="mt-6 text-xl">Our GenAI engine analyse customer feedback and competitor prices,  delivers all what you need to improve your operations</p>
             <ul className="mt-8 space-y-4 text-lg">
-              <li>• Trusted by Fortune 100 enterprises.</li>
-              <li>• Powered by a Knowledge Graph.</li>
-              <li>• SOC 2 Type II and ISO/IEC 27001 certified.</li>
+              <li>• Prize AI Analysis.</li>
+              <li>• Reviews sentiment Analysis.</li>
             </ul>
-            <div className="mt-10 flex gap-4">
+            {/* <div className="mt-10 flex gap-4">
               <Button size="lg" variant="default" className="bg-primary text-primary-foreground hover:bg-primary/90">
                 Take Product Tour <ArrowRight className="ml-2 h-4 w-4" />
               </Button>
               <Button size="lg" variant="outline" className="bg-white/10 text-white hover:bg-white/20">
                 Join Live Demo
               </Button>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
-      <ClientLogos />
+      {/* <ClientLogos /> */}
       <ScrollSection />
       <AIToolsSection />
       <PricingSection />
