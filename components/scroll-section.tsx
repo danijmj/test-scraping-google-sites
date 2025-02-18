@@ -116,7 +116,7 @@ export function ScrollSection() {
                   initial={{ opacity: 0, x: 20 }}
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -20 }}
-                  transition={{ duration: 0.3 }}
+                  transition={{ duration: 0.05 }}
                   className="relative w-[90%] h-[600px] rounded-lg overflow-hidden shadow-xl bg-white"
                 >
                   <Image
