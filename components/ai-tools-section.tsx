@@ -63,7 +63,7 @@ export function AIToolsSection() {
   const [hoveredTool, setHoveredTool] = useState<string | null>(null)
 
   return (
-    <section className="bg-gradient-to-br from-gray-100 to-gray-200 py-20">
+    <section className="bg-gradient-to-br from-gray-100 to-gray-50 py-20">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold tracking-tight text-gray-900 text-center mb-16">
           AI-Powered Tools for Smarter Business

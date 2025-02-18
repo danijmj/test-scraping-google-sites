@@ -13,10 +13,11 @@
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
-    --primary: 41 65% 41%;
+    --primary: 44 45.4% 59.8%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 82 59% 95%;
+    /* --secondary: 82 59% 95%; */
+    --secondary: 0 0.0% 19.2%;
     --secondary-foreground: 82 59% 21%;
 
     --muted: 82 59% 95%;
@@ -44,7 +45,8 @@
     --popover: 222.2 84% 4.9%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 82 59% 31%;
+    /* --primary: 82 59% 31%; */
+    --primary: 44 45.4% 59.8%;
     --primary-foreground: 0 0% 100%;
 
     --secondary: 82 59% 15%;
@@ -62,6 +64,39 @@
     --border: 82 59% 15%;
     --input: 82 59% 15%;
     --ring: 82 59% 31%;
+  }
+
+  
+  /*Para simular el cursor del teclado usamos la siguiente pseudoclase con una animación que pueden ver en la parte final del código CSS*/
+  .animate-text::after {
+    content: "|";
+    font-family: "Inconsolata", monospace;
+    animation-name: parpadeo;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    top: -2px;
+    position: relative;
+  }
+
+  
+  /*Esta animación imita el parpadeo del cursor del teclado*/
+  @keyframes parpadeo {
+    0% {
+      opacity: 1;
+    }
+    20% {
+      opacity: 1;
+    }
+    25% {
+      opacity: 0;
+    }
+    90% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 }
 

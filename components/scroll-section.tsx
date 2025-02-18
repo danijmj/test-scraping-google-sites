@@ -64,7 +64,7 @@ export function ScrollSection() {
         {
           root: null, // Use the viewport as the container
           rootMargin: '0px',
-          threshold: 0.5, // Trigger when 10% of the element is in view
+          threshold: 1.0, // Trigger when 10% of the element is in view
         }
       )
 
@@ -87,7 +87,8 @@ export function ScrollSection() {
           {/* Scrolling content */}
           <div className="px-4 py-16 sm:px-6 lg:px-8">
             {sections.map((section) => (
-              <div key={section.id} ref={(el) => (sectionRefs.current[section.id] = el)} className="min-h-[80vh] py-16">
+              <div key={section.id} ref={(el) => (sectionRefs.current[section.id] = el)} className="py-16">
+                {/* <div key={section.id} ref={(el) => (sectionRefs.current[section.id] = el)} className="min-h-[80vh] py-16"> */}
                 <div className="sticky top-1/3">
                   <h2 className="text-3xl font-bold tracking-tight text-[#1a2b3c] sm:text-4xl mb-4">{section.title}</h2>
                   <p className="text-lg text-gray-600 mb-8">{section.description}</p>
@@ -109,7 +110,8 @@ export function ScrollSection() {
 
           {/* Sticky image container */}
           <div className="hidden lg:block">
-            <div className="sticky top-0 h-screen flex items-center justify-center">
+            {/* <div className="sticky top-0 h-screen flex items-center justify-center"> */}
+            <div className="sticky lg:top-[4%] xl:top-[22%] my-16 flex items-center justify-center">
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeSection}
